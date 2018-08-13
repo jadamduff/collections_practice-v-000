@@ -6,3 +6,9 @@ def sort_array_desc(array)
   desc = array.sort
   return desc.reverse
 end
+
+def sort_array_char_count(array)
+  array.sort do |a, b|
+    a.length <=> b.length
+  end
+end
