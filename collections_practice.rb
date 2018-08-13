@@ -36,3 +36,10 @@ end
 def sum_array(array)
   array.reduce(:+)
 end
+
+def add_s(array)
+  array.each_with_index do |word, i|
+    word << "s" if i != 1
+  end
+  return array
+end
