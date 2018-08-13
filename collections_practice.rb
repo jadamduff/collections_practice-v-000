@@ -12,3 +12,9 @@ def sort_array_char_count(array)
     a.length <=> b.length
   end
 end
+
+def swap_elements(array)
+  new_arr = array.slice(1, 1)
+  array.delete(new_arr[0])
+  array << new_arr[0]
+end
